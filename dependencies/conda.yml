@@ -1,0 +1,20 @@
+name: model-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - pip
+  - pandas>=1.1,<1.2
+  - pip:
+    - inference-schema[numpy-support]==1.3.0
+    - mlflow>=1.26.1
+    - azureml-mlflow==1.42.0
+    - psutil>=5.8,<5.9
+    - tqdm>=4.59,<4.60
+    - ipykernel~=6.0 
+    - neuralprophet==1.0.0rc5
+    #- git+https://github.com/ourownstory/neural_prophet.git
+    #- git=https://github.com/Azure/azhpc-images/blob/master/ubuntu/ubuntu-22.x/ubuntu-22.04-hpc/install.sh
+    - pytorch-lightning>=1.4.0
+    - memory_profiler
